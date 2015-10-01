@@ -122,7 +122,7 @@ function optional(type: Type, name?: string): Type {
 function maybe(type: Type, name?: string): Type {
   name = name || `?${type.name}`;
   return new Type(name, (x, ctx, failOnFirstError) => {
-    if (x === null) { return null; }
+    if (x === null || x === undefined) { return null; }
     ctx = ctx || [];
     ctx.push(name);
     return validate(x, type, ctx, failOnFirstError);
