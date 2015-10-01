@@ -1,6 +1,6 @@
 {
   "name": "flowcheck",
-  "version": "0.2.7",
+  "version": "mdcollab/flowcheck#14234d5f075f3296b271a56fb281367e7e9bf521",
   "description": "Runtime type checking for Flow",
   "main": "index.js",
   "scripts": {
