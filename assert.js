@@ -116,7 +116,7 @@ function optional(type, name) {
 function maybe(type, name) {
   name = name || ("?" + type.name);
   return new Type(name, function (x, ctx, failOnFirstError) {
-    if (x === null) {
+    if (x === null || x === undefined) {
       return null;
     }
     ctx = ctx || [];
