@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/gcanti/flowcheck",
   "dependencies": {
-    "jstransform": "^9.0.0",
+    "jstransform": "^8.2.0",
     "through": "^2.3.6"
   },
   "devDependencies": {
